@@ -1,0 +1,36 @@
+header{
+    height: 90px;
+    padding: 0px 100px;
+}
+
+.logotitle{
+    font-size: 2rem;
+    text-transform: lowercase;
+    font-weight: 900;
+}
+
+.card-main{
+    height: 80%;
+    margin: 25px;
+}
+.nav-link{
+    color: rgb(0, 122, 170);
+}
+
+.tab-pane .profile-pic{
+    width: 200px;
+    margin: 50px;
+    margin-top: 100px;
+}
+.tab-pane .table{
+    width: 100%;
+    margin: 30px;
+}
+
+#nav-contents{
+    padding: 0px 10%;
+}
+
+#nav-booking{
+    padding: 0px 20%;
+}
