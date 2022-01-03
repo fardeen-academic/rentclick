@@ -68,7 +68,7 @@ nav .nav-link {
 }
 
 .card-small {
-    width: 31%;
+    width: 48%;
     background-color: grey;
     height: 350px;
     margin-left: 25px;
@@ -91,13 +91,6 @@ nav .nav-link {
 
 .card2 {
     background-image: url("/images/card2.jpg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.card3 {
-    background-image: url("/images/card3.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;

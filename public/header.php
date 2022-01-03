@@ -49,11 +49,16 @@ if (!isset($_SESSION)) {
 
           <?php
           if (isset($_SESSION['user']) && !empty($_SESSION['user'])) {
-            echo '<li class="nav-item"><a class="head-text nav-link active" href="user/profile.php">Profile</a></li>
+            echo '<li class="nav-item">
+            <a id="head-text3" class="head-text nav-link active" href="../user/profile.php">Profile</a>
+          </li>
           </ul>
                     <a class="head-text btn btn-dark d-sm-inline-block d-none ms-3" href="user/logout.php">Logout</a>';
           } else {
-            echo '</ul><a class="head-text btn btn-dark d-sm-inline-block d-none ms-3" href="user/login.php">Login</a>';
+            echo '<li class="nav-item">
+            <a id="head-text3" class="head-text nav-link active" href="../user/profile.php">Signup</a>
+          </li>
+          </ul><a class="head-text btn btn-dark d-sm-inline-block d-none ms-3" href="user/login.php">Login</a>';
           }
           ?>
           </nav>

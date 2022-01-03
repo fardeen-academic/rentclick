@@ -1,9 +1,9 @@
 function validation(){
     var valid = true;
-  
+    
     //validate name
     var name = document.getElementById("name").value;
-    var reg = /^([a-zA-Z0-9. ]{2,})$/;
+    var reg = /^([a-zA-Z. ]{2,})$/;
     if (!reg.test(name)){
       document.getElementById('name-error').style.display = "block";
       valid = false;
@@ -13,7 +13,7 @@ function validation(){
   
    //validate nid
    var nid = document.getElementById("nid").value;
-   var reg = /^[0-9]{10}([0-9]{3})?([0-9]{4})?/;
+   var reg = /^[0-9]{10}([0-9]{3})?([0-9]{4})?$/;
    if (!reg.test(nid)){
      document.getElementById('nid-error').style.display = "block";
      valid = false;

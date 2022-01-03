@@ -12,6 +12,9 @@ function scrollFunction() {
     document.getElementById('head-text').classList.remove('text-light')
     document.getElementById('head-text2').classList.add('text-dark')
     document.getElementById('head-text2').classList.remove('text-light')
+    document.getElementById('head-text3').classList.add('text-dark')
+    document.getElementById('head-text3').classList.remove('text-light')
+    
       
   } else {
     document.getElementById("header").style.height= "90px";
@@ -25,5 +28,8 @@ function scrollFunction() {
     document.getElementById('head-text').classList.add('text-light')
     document.getElementById('head-text2').classList.remove('text-dark')
     document.getElementById('head-text2').classList.add('text-light')
+    document.getElementById('head-text3').classList.remove('text-dark')
+    document.getElementById('head-text3').classList.add('text-light')
+    
   }
 }

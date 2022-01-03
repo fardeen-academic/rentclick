@@ -31,7 +31,7 @@ if (!isset($_SESSION['user-id'])) {
             <div class=" d-flex justify-content-end order-lg-3" style="width: 100%;">
                 <ul class="navbar-nav ms-auto text-dark">
                     <li class="nav-item">
-                        <a id="head-text" class="head-text nav-link active" href="house.php">Welcome, <?php if (isset($_SESSION['admin-name']) && !empty($_SESSION['admin-name'])) {
+                        <a id="head-text" class="head-text nav-link active" href="house.php">Welcome, <?php if (isset($_SESSION['user']) && !empty($_SESSION['user'])) {
                                                                                                             echo $_SESSION['user'];
                                                                                                         } ?></a>
                     </li>
@@ -89,11 +89,14 @@ if (!isset($_SESSION['user-id'])) {
                             <?php
                             $id = $_SESSION['user-id'];
                             $sql = mysqli_query($conn, "SELECT * FROM bookings WHERE user='$id'");
-                            $pid = mysqli_fetch_assoc($sql)['content'];
-                            $content = mysqli_query($conn, "SELECT * FROM content WHERE id = $pid");
-                            while ($row = mysqli_fetch_assoc($content)) {
-                                echo "<tr><td>" . $row['id'] . "</td><td>" . $row['name'] . "</td><td>" . $row['price'] . "</td><td>" . $row['description'] . "</td></tr>";
+                            while ($pid = mysqli_fetch_assoc($sql)['content']) {
+                                $content = mysqli_query($conn, "SELECT * FROM content WHERE id = $pid");
+                                while ($row = mysqli_fetch_assoc($content)) {
+                                    echo "<tr><td>" . $row['id'] . "</td><td>" . $row['name'] . "</td><td>" . $row['price'] . "</td><td>" . $row['description'] . "</td></tr>";
+                                }
                             }
+
+
                             ?>
                         </tbody>
                     </table>
