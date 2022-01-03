@@ -1,17 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
-.header-div{
+.header-div {
     position: fixed;
     width: 100%;
     margin: 0px;
 }
-header{
-    text-transform:uppercase;
+header {
+    text-transform: uppercase;
     height: 90px;
     width: 100%;
     padding: 10px 100px 10px 100px;
@@ -20,57 +20,54 @@ header{
     top: 0;
     background: none;
     z-index: 999;
-
 }
 
-
-.logotitle{
+.logotitle {
     font-weight: bold;
     font-size: 30px;
     text-transform: lowercase;
 }
 
-.navbar a.nav-link{
+.navbar a.nav-link {
     text-transform: uppercase;
     font-size: 17px;
     color: white;
 }
 
-nav .nav-link{
+nav .nav-link {
     font-size: 10px;
 }
 
-.navbar-transparent{
+.navbar-transparent {
     background-color: none;
 }
 
 /*  index.html   */
 
-
-.content{
+.content {
     width: 100%;
     height: 800px;
     background-color: black;
-    background-image: url('/images/outdoor-dark.jpg');
+    background-image: url("/images/hatirjheel.jpg");
     background-position: right;
     background-size: cover;
     padding: 350px 0px 200px 100px;
     color: white;
 }
 
-.container-custom{
+.container-custom {
     margin: 50px 150px;
 }
 
-.container-custom .btn{
+.container-custom .btn {
     margin-top: 20px;
 }
 
-.container-custom .row{
+.container-custom .row {
     width: 100%;
 }
 
-.card-small{
+.card-small {
     width: 31%;
     background-color: grey;
     height: 350px;
@@ -81,69 +78,60 @@ nav .nav-link{
     border-radius: 20px;
 }
 
-.card-small h1{
+.card-small h1 {
     font-size: 3rem;
     font-weight: 900;
 }
 
-.card1{
-    background-image: url('/images/card1.jpg');
+.card1 {
+    background-image: url("/images/card1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.card2{
-    background-image: url('/images/card2.jpg');
+.card2 {
+    background-image: url("/images/card2.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.card3{
-    background-image: url('/images/card3.jpg');
+.card3 {
+    background-image: url("/images/card3.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-
-.card-large{
+.card-large {
     margin-top: 50px;
     background-color: black;
-    background-image: url('/images/house-dark.jpg');
+    background-image: url("/images/house-dark.jpg");
     background-repeat: no-repeat;
     background-position: right;
     height: 400px;
     padding: 100px 100px;
     border-radius: 20px;
 }
-.card-large .btn{
+.card-large .btn {
     width: fit-content;
 }
 
-
 /*  index.html   */
-
-
 
 /* Login modal */
 
-.tab-pane{
+.tab-pane {
     margin: 25px;
 }
 
-
-
 /* Login modal */
-
-
 
 /* ######## house cars ######## */
 
-.title-header{
+.title-header {
     width: 100%;
-    background-image: url('/images/bg2.jpg');
+    background-image: url("/images/bg2.jpg");
     height: 250px;
     background-position: center;
     background-size: cover;
@@ -151,26 +139,24 @@ nav .nav-link{
     margin-bottom: 30px;
 }
 
-.product-image{
+.product-image {
     height: 230px;
     width: 325px;
     padding: 10px;
     border-radius: 25px;
 }
 
-.container-class{
+.container-class {
     margin: 20px 5%;
 }
 
-.container-class .card{
+.container-class .card {
     margin: 10px 20px;
 }
 
 /* details.php */
 
-
-
-.buy-page{
+.buy-page {
     height: 100vh;
     width: 100%;
     background-color: rgb(0, 31, 88);
